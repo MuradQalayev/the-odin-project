@@ -1,0 +1,46 @@
+/* Import Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Images and videos */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Form inputs inherit font */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Break-word for text */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Set up VikingFont */
+@font-face {
+    font-family: 'VikingFont';
+    src: url('./example-project-image/fonts/Viking Hell.otf') format('opentype'); /* Use correct file path */
+}
+
+/* Custom body font usage */
+body {
+    font-family: 'VikingFont', system-ui, sans-serif;
+}
